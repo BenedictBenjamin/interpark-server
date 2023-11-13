@@ -194,3 +194,9 @@ app.get("/recommend", (req, res) => {
 app.listen(port, () => {
   console.log(`현재 웹서버가 ${port} 로 접속하였습니다.`);
 });
+
+// tour 영역에 출력할 자료 요청
+app.get("/tour", (req, res) => {
+  const result = {};
+  res.send(result);
+});
